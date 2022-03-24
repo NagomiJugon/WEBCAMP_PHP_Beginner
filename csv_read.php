@@ -5,6 +5,7 @@ $file_name = __DIR__ . "/data.csv";
 
 //ファイルのOPEN
 $file_obj = new SplFileObject( $file_name );
+var_dump( $file_obj );
 //ファイルをCSVとして読み込む
 $file_obj -> setFlags( SplFileObject::READ_CSV );
 
